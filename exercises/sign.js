@@ -12,15 +12,27 @@
 
 // Your code :
 
-//* Begin of tests
-const assert = require('assert')
+const sign = $number => {
+ if ($number == 0){
+     return 0
+ }
+ if ($number > 0){
+     return 1
+ }
+ if ($number < 1){
+     return -1
+ }
+};
 
-assert.strictEqual(typeof sign, 'function')
-assert.strictEqual(sign.toString().includes('Math.sign'), false)
-assert.strictEqual(sign.length, 1)
-assert.notStrictEqual(sign, Math.sign)
-assert.strictEqual(sign(-2), -1)
-assert.strictEqual(sign(10), 1)
-assert.strictEqual(sign(0), 0)
-assert.strictEqual(sign(132), 1)
+//* Begin of tests
+const assert = require('assert');
+
+assert.strictEqual(typeof sign, 'function');
+assert.strictEqual(sign.toString().includes('Math.sign'), false);
+assert.strictEqual(sign.length, 1);
+assert.notStrictEqual(sign, Math.sign);
+assert.strictEqual(sign(-2), -1);
+assert.strictEqual(sign(10), 1);
+assert.strictEqual(sign(0), 0);
+assert.strictEqual(sign(132), 1);
 // End of tests */

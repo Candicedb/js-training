@@ -11,6 +11,18 @@
 
 // Your code :
 
+const abs = $number => {
+    if($number == 0){
+        return 0
+    }
+    if ($number > 0){
+        return $number
+    }
+    if ($number <0){
+        return $number *  (-1)
+    }
+};
+
 //* Begin of tests
 const assert = require('assert')
 
